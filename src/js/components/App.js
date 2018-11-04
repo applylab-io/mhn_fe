@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import YoutubePlayer from "./YoutubePlayer";
 import Playlist from "./Playlist";
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -53,6 +54,7 @@ const App = () => (
         <YoutubePlayer scale="3" source="https://www.youtube.com/embed/ELVYcEPIKJg" />
         <Playlist type="youtube" title="Watch more" playlist={youtubePlaylist} />
         <Playlist type="audio" title="Listen to your favorite tracks" playlist={audioPlaylist} />
+        <Footer />
     </div>
 );
 
