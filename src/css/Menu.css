@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.menu > a  {
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: grey;
+}
+.menu > a:hover {
+    background-color: darkgray;
+}
