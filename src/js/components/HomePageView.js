@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Banner from "./Banner";
 
 class HomePageView extends Component {
     render() {
         return (
             <div style={baseStyle}>
-                <h2 style={{textAlign: "center"}}>This is home page</h2>
+                <Banner />
             </div>
         );
     }
