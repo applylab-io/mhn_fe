@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import uuidv1 from 'uuid';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import uuidv1 from "uuid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const channels = [
     {
@@ -11,7 +11,6 @@ const channels = [
         name: "youtube",
         target: "https://www.youtube.com/channel/UCcbgNbNj8Zhf4WvWHaGZBpQ"
     },
-    ,
     {
         name: "apple",
         target: "javscript:void()"
@@ -32,8 +31,8 @@ class SocialBar extends Component {
         return (
             <ul style={channelStyle}>
                 {channels.map(el => (
-                    <li key={uuidv1()} style={{marginLeft: '15%', marginRight: '15%'}}>
-                        <a href={el.target} target="_blank" style={{textDecoration: 'none', color: 'grey'}}><FontAwesomeIcon icon={['fab', el.name]} /></a>
+                    <li key={uuidv1()} style={{marginLeft: "15%", marginRight: "15%"}}>
+                        <a href={el.target} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "grey"}}><FontAwesomeIcon icon={["fab", el.name]} /></a>
                     </li>
                 ))}
             </ul>
@@ -42,13 +41,13 @@ class SocialBar extends Component {
 }
 
 const channelStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    listStyle: 'none',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "row",
+    listStyle: "none",
+    justifyContent: "center",
+    alignItems: "center",
     fontSize: "large",
-    paddingInlineStart: '0px'
+    paddingInlineStart: "0px"
 };
 
 export default SocialBar;

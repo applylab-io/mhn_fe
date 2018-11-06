@@ -14,6 +14,7 @@ class SoundcloudPlayer extends Component {
     render() {
         return (
             <iframe
+                title={this.state.source}
                 width="100%"
                 height="auto"
                 scrolling="no"

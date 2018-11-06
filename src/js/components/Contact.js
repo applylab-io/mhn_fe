@@ -15,7 +15,7 @@ class Contact extends Component {
             <ul style={baseStyle}>
                 {contacts.map(el => (
                     <li key={uuidv1()} style={{marginLeft: '20%', marginRight: '20%'}}>
-                        <a href={el.target} target="_blank" style={{textDecoration: 'none', color: 'grey'}}><FontAwesomeIcon icon={el.name} /></a>
+                        <a href={el.target} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'grey'}}><FontAwesomeIcon icon={el.name} /></a>
                     </li>
                 ))}
             </ul>

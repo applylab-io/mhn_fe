@@ -10,7 +10,7 @@ class Footer extends Component {
                     <img src={logo} alt="applylab.io" width="64px" height="64px" title="applylab.io" />
                     <ul style={applylabCreditTextStyle}>
                         <li>Powered by</li>
-                        <li><a href="http://applylab.io" target="_blank" style={{textDecoration: 'none', color: 'grey'}}>applylab.io</a></li>
+                        <li><a href="http://applylab.io" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'grey'}}>applylab.io</a></li>
                     </ul>
                 </div>
             </div>
