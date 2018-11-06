@@ -5,7 +5,7 @@ class HomePageView extends Component {
     render() {
         return (
             <div style={baseStyle}>
-                <Banner />
+                <Banner slideDuration={4} />
             </div>
         );
     }

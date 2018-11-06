@@ -7,11 +7,10 @@ class Footer extends Component {
             <div style={baseStyle}>
                 <p>&copy; 2018. Music Hub Pvt. Ltd. All rights reserved.</p>
                 <div style={applylabCreditStyle}>
-                    <img src={logo} alt="applylab.io" width="64px" height="64px" title="applylab.io" />
-                    <ul style={applylabCreditTextStyle}>
-                        <li>Powered by</li>
-                        <li><a href="http://applylab.io" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'grey'}}>applylab.io</a></li>
-                    </ul>
+                    <span>Powered by</span>
+                    <a href="http://applylab.io" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'grey' }}>
+                        <img src={logo} alt="applylab.io" width="28px" height="28px" title="applylab.io" />
+                    </a>
                 </div>
             </div>
         );
@@ -38,7 +37,6 @@ const applylabCreditStyle = {
 }
 
 const applylabCreditTextStyle = {
-    paddingInlineStart: '0px',
-    listStyle: 'none'
+    textAlign: 'center'
 }
 export default Footer;

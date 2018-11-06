@@ -3,7 +3,13 @@ const filler = Object.freeze({
     SENTENCE: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     WORD: "vitae",
     BANNER_IMG: "http://picsum.photos/1280/480/?random",
-    THUMBNAIL_IMG: "http://picsum.photos/200/200/?random"
+    THUMBNAIL_IMG: "http://picsum.photos/200/200/?random",
+    BANNER_GALLERY: [
+        "http://picsum.photos/1280/480/?image=1083",
+        "http://picsum.photos/1280/480/?image=1064",
+        "http://picsum.photos/1280/480/?image=1051",
+        "http://picsum.photos/1280/480/?image=1027"
+    ]
 });
 
 export default filler;
