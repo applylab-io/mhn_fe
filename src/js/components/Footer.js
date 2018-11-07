@@ -36,7 +36,4 @@ const applylabCreditStyle = {
     flexWrap: 'wrap',
 }
 
-const applylabCreditTextStyle = {
-    textAlign: 'center'
-}
 export default Footer;
