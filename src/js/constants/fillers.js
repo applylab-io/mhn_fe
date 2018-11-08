@@ -5,10 +5,32 @@ const filler = Object.freeze({
     BANNER_IMG: "http://picsum.photos/1280/480/?random",
     THUMBNAIL_IMG: "http://picsum.photos/200/200/?random",
     BANNER_GALLERY: [
-        "http://picsum.photos/1280/480/?image=1083",
-        "http://picsum.photos/1280/480/?image=1064",
-        "http://picsum.photos/1280/480/?image=1051",
-        "http://picsum.photos/1280/480/?image=1027"
+        "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_480,q_70,w_1280/v1/clients/vfcvb/Valley_Forge_Casino_Resort_Music_Fair_Header_1_414277af-a19c-48d1-a736-adc057da9aa4.jpg",
+        "http://tnprod.com/files/theme/Slide1.jpg",
+        "https://www.visitmusiccity.com/Content/cms/uploads/Micwide480.jpg",
+        "https://cdn.tourradar.com/s3/tour/original/106733_f66602b0.jpg"
+    ],
+    PARTNERS: [
+        {
+            brand: "hungama",
+            logo: "https://www.webtalkies.in/wp-content/uploads/2016/12/Hungama-logo-400x143.png"
+        },
+        {
+            brand: "gaana",
+            logo: "https://www.theandroidsoul.com/wp-content/uploads/2017/02/gaana.png"
+        },
+        {
+            brand: "saavn",
+            logo: "http://www.thetechy.com/tft/wp-content/uploads/bfi_thumb/Saavn-Logo-Horizontal-Green-1-1-2yciycyc26n8uzq7mer1z3m491ruivikk8rfus7idd9ffc64s.png"
+        },
+        {
+            brand: "youtube",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1280px-Logo_of_YouTube_%282015-2017%29.svg.png"
+        },
+        {
+            brand: "apple music",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/2000px-Apple_Music_logo.svg.png"
+        }        
     ]
 });
 

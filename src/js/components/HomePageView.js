@@ -1,23 +1,17 @@
 import React, { Component } from "react";
 import Banner from "./Banner";
+import { NavLink } from "react-router-dom";
+import "../../css/HomePageView.css";
 
 class HomePageView extends Component {
     render() {
         return (
-            <div style={baseStyle}>
+            <div className="home-page-view">
                 <Banner slideDuration={4} />
+                <h1>We Create Best-In-Industry Music. <NavLink to="/about">Know more...</NavLink></h1>
             </div>
         );
     }
 }
-
-const baseStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    width: '100%',
-    maxWidth: '100%'
-};
 
 export default HomePageView;

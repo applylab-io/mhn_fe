@@ -1,0 +1,25 @@
+.partners-page-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.partners-page-view > h1 {
+    text-align: center;
+    color: grey;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners > img {
+    margin: 10px 10px;
+}

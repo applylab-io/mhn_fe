@@ -1,22 +1,33 @@
 import React, { Component } from "react";
+import filler from "../constants/fillers";
+import "../../css/PartnersPageView.css";
 
 class PartnersPageView extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            partners: filler.PARTNERS
+        }
+    }
+    componentDidMount() {
+        this.setState({
+            partners: filler.PARTNERS
+        });
+    }
     render() {
         return (
-            <div style={baseStyle}>
-                <h2 style={{textAlign: "center"}}>This is partners page</h2>
+            <div className="partners-page-view">
+                <h1>Our Media Partners</h1>
+                <div className="partners">
+                    {
+                        this.state.partners.map((partner, index) =>
+                            <img src={partner.logo} alt={partner.brand} key={index} width="320px" height="auto" />
+                        )
+                    }
+                </div>
             </div>
         );
     }
 }
-
-const baseStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    width: '100%',
-    maxWidth: '100%'
-};
 
 export default PartnersPageView;
