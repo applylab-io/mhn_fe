@@ -18,23 +18,4 @@ class Footer extends Component {
     }
 }
 
-const baseStyle = {
-    display: 'flex',
-    flexdirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    backgroundColor: '#d9dbdd',
-    color: 'grey',
-    fontSize: 'small'
-}
-
-const applylabCreditStyle = {
-    display: 'flex',
-    flexdirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-}
-
 export default Footer;
