@@ -16,17 +16,19 @@ const App = () => (
     <Router>
         <div className='app'>
             <Header />
-            <Switch>
-                <Route exact path="/" component={HomePageView} />
-                <Route path="/partners" component={PartnersPageView} />
-                <Route path="/music" component={MusicPageView} />
-                <Route path="/videos" component={VideosPageView} />
-                <Route path="/news" component={NewsPageView} />
-                <Route path="/about" component={AboutPageView} />
-                <Route path="/contact" component={ContactPageView} />
-                {/* when none of the above match, <NoMatch> will be rendered */}
-                <Route component={NoMatch} />
-            </Switch>
+            <div className="content">
+                <Switch>
+                    <Route exact path="/" component={HomePageView} />
+                    <Route path="/partners" component={PartnersPageView} />
+                    <Route path="/music" component={MusicPageView} />
+                    <Route path="/videos" component={VideosPageView} />
+                    <Route path="/news" component={NewsPageView} />
+                    <Route path="/about" component={AboutPageView} />
+                    <Route path="/contact" component={ContactPageView} />
+                    {/* when none of the above match, <NoMatch> will be rendered */}
+                    <Route component={NoMatch} />
+                </Switch>
+            </div>
             <Footer />
         </div>
     </Router>

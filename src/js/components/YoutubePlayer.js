@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../css/YoutubePlayer.css";
 
 const playerDefaults = Object.freeze({
     allowOptions: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
@@ -24,7 +25,7 @@ class YoutubePlayer extends Component {
         }
         const allowOptions = getFinalAllowOptions(this.state.allowOptions);
         return (
-            <div style={youtubePlayerStyle}>
+            <div className="youtube-player">
                 <iframe
                     title={this.state.source}
                     width={playerDefaults.width * parseFloat(this.state.scale) + "px"}
@@ -46,14 +47,6 @@ const getFinalAllowOptions = (allowOptions) => allowOptions && allowOptions.leng
 const titleStyles = {
     textAlign: 'center',
     color: 'red'
-}
-
-const youtubePlayerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: '4px',
-    marginBottom: '4px'
 }
 
 export default YoutubePlayer;

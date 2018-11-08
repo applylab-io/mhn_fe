@@ -18,7 +18,7 @@ class AudioWidget extends Component {
     render() {
         return (
             <div style={widgetStyles}>
-                <p>&nbsp;&nbsp;<FontAwesomeIcon icon="play-circle" title="Play by clicking links from one of the options on the right" />&nbsp;&nbsp;{this.state.title + " (Singer: " + this.state.singer + ") "}</p>
+                <p>&nbsp;&nbsp;<FontAwesomeIcon icon="play-circle" title="Play by clicking links from one of the options on the right" />&nbsp;&nbsp;{this.state.title}</p>
                 <ul style={controlStyles}>
                     {checkDisplay(this.state.soundcloud) && <li><a href={this.state.soundcloud} rel="noopener noreferrer" target="_blank" style={{textDecoration: "none", color: "grey"}}><FontAwesomeIcon icon={["fab", "soundcloud"]} />&nbsp;&nbsp;</a></li>}
                     {checkDisplay(this.state.itunes) && <li><a href={this.state.itunes} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "grey"}}><FontAwesomeIcon icon={["fab", "apple"]} /></a>&nbsp;&nbsp;</li>}
