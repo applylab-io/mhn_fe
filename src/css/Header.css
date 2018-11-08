@@ -4,10 +4,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: groove;
     padding-bottom: 4px;
     padding-top: 4px;
-    margin-bottom: 4px;
 }
 .menu-container {
     display: flex;

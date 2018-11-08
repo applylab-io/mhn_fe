@@ -9,17 +9,27 @@ class Menu extends Component {
         this.state = {
             isToggleOn: false
         }
+        this.toggleBtn = null;
         this.handleToggle = this.handleToggle.bind(this);
     }
     handleToggle() {
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }));
+        if (this.toggleBtn.offsetHeight > 0) {
+            this.setState(state => ({
+                isToggleOn: !state.isToggleOn
+            }));
+        }
+    }
+    componentDidMount() {
+        if (this.toggleBtn.offsetHeight > 0) {
+            this.setState(state => ({
+                isToggleOn: true
+            }));
+        }        
     }
     render() {
         return (
             <div className="menu-subcontainer">
-                <div className="menu" style={{display: this.state.isToggleOn ? "none": "flex" }}>
+                <div className="menu" style={{ display: this.state.isToggleOn ? "none" : "flex" }} onClick={this.handleToggle}>
                     <NavLink exact to="/">HOME</NavLink>
                     <NavLink to="/partners">PARTNERS</NavLink>
                     <NavLink to="/music">MUSIC</NavLink>
@@ -28,7 +38,7 @@ class Menu extends Component {
                     <NavLink to="/about">ABOUT</NavLink>
                     <NavLink to="/contact">CONTACT</NavLink>
                 </div>
-                <div className="menu-toggle" onClick={this.handleToggle}>
+                <div className="menu-toggle" onClick={this.handleToggle} ref={c => (this.toggleBtn = c)}>
                     <FontAwesomeIcon icon="bars" />
                 </div>
             </div>
