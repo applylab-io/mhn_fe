@@ -1,0 +1,13 @@
+.about-page-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    color: grey;
+}
+
+.about-page-view > h1 {
+    text-align: center;
+}
