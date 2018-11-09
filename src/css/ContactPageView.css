@@ -1,0 +1,39 @@
+.contact-page-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    color: grey;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact-form > input:not([type=submit]), textarea, label {
+    width: 100%;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+#contact-form > textarea {
+    height: 100px;
+}
+
+#contact-form > input[type=submit] {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    font-size: larger;
+}
