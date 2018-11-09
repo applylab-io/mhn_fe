@@ -20,13 +20,4 @@ class NewsPageView extends Component {
     }
 }
 
-const baseStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    width: '100%',
-    maxWidth: '100%'
-};
-
 export default NewsPageView;
