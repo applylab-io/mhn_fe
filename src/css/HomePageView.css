@@ -5,9 +5,42 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
+    color: grey;
 }
 
-.home-page-view > h1 {
+.about-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkviolet;
+    color: white;
     text-align: center;
-    color: grey;
+    align-items: center;
+}
+
+.about-preview a, .videos-preview a {
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+    color: red;
+}
+
+.videos-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .videos-preview {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+.quote, .preview-title {
+    font-size: xx-large;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../css/YoutubePlayer.css";
+import filler from "../constants/fillers";
 
 const playerDefaults = Object.freeze({
     allowOptions: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
@@ -17,13 +18,16 @@ class YoutubePlayer extends Component {
             scale: this.props.scale || "1"
         };
     }
+
     render() {
-        if(!this.state.source) {
+        if (!this.state.source) {
+            
             return (
-                <h3 style={titleStyles}>No featured content available at the moment</h3>
+                <h3 className="no-content-message">{filler.PLAYER_NO_CONTENT_MSG}}</h3>
             );
         }
         const allowOptions = getFinalAllowOptions(this.state.allowOptions);
+
         return (
             <div className="youtube-player">
                 <iframe
@@ -43,10 +47,5 @@ class YoutubePlayer extends Component {
 const toCsv = (accumulator, current) => accumulator + '; ' + current;
 
 const getFinalAllowOptions = (allowOptions) => allowOptions && allowOptions.length > 0 ? playerDefaults.allowOptions + '; ' + allowOptions.reduce(toCsv) : playerDefaults.allowOptions;
-
-const titleStyles = {
-    textAlign: 'center',
-    color: 'red'
-}
 
 export default YoutubePlayer;

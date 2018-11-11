@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import uuidv1 from 'uuid';
 import YoutubePlayer from "./YoutubePlayer";
-import SoundcloudPlayer from "./SoundcloudPlayer";
 import AudioWidget from "./AudioWidget";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -38,20 +37,6 @@ class Playlist extends Component {
                         {playlist.map(el => (
                             <li key={uuidv1()}>
                                 <YoutubePlayer source={el.source} scale="1" />
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            );
-        } else if (this.state.type && this.state.type.toLowerCase() === playlistDefaults.soundcloud) {
-            const playlist = this.state.playlist;
-            return (
-                <div style={playlistContainerStyle}>
-                    <h2 style={titleStyle}><FontAwesomeIcon icon={['fab', 'soundcloud']} />&nbsp;{this.state.title}</h2>
-                    <ul style={audioPlaylistStyle}>
-                        {playlist.map(el => (
-                            <li key={uuidv1()}>
-                                <SoundcloudPlayer source={el.source} />
                             </li>
                         ))}
                     </ul>

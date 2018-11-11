@@ -5,3 +5,7 @@
     margin-right: 4px;
     margin-bottom: 4px; 
 }
+.no-content-message {
+    text-align: center;
+    color: red;
+}

@@ -12,16 +12,17 @@ import NewsPageView from "./NewsPageView";
 import VideosPageView from "./VideoPageView";
 import ContactPageView from "./ContactPageView";
 import NoMatch from "./NoMatch";
+import filler from "../constants/fillers";
 
 class App extends Component {
     constructor() {
         super();
-        emailjs.init("user_5JiSj8EUURp7dGwXrfeoW");
+        emailjs.init(filler.EMAILJS_USERID);
     }
     render() {
         return(
             <Router>
-            <div className='app'>
+            <div className="app">
                 <Header />
                 <div className="content">
                     <Switch>

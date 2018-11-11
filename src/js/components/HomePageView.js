@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Banner from "./Banner";
 import { NavLink } from "react-router-dom";
+import YoutubePlayer from "./YoutubePlayer";
+import filler from "../constants/fillers";
 import "../../css/HomePageView.css";
 
 class HomePageView extends Component {
@@ -8,7 +10,15 @@ class HomePageView extends Component {
         return (
             <div className="home-page-view">
                 <Banner slideDuration={4} />
-                <h1>We Create Best-In-Industry Music. <NavLink to="/about">Know more...</NavLink></h1>
+                <div className="about-preview">
+                    <p className="quote">&quot;{filler.ABOUT_PREVIEW_QUOTE.quote}&quot;</p>
+                    <p>-{filler.ABOUT_PREVIEW_QUOTE.credits}</p>
+                    <p>{filler.ABOUT_PREVIEW_MSG}<NavLink to="/about">{filler.ABOUT_PREVIEW_LINK_TEXT}</NavLink></p>
+                </div>
+                <div className="videos-preview">
+                    <YoutubePlayer source={filler.FEATURED_VIDEO} />
+                    <p><span className="preview-title">Videos</span><br /><br />{filler.VIDEO_PREVIEW_TEASER_MSG}<br /><br />{filler.VIDEO_PREVIEW_MSG}<NavLink to="/videos">{filler.VIDEOS_PREVIEW_LINK_TEXT}</NavLink></p>
+                </div>
             </div>
         );
     }

@@ -31,7 +31,19 @@ const filler = Object.freeze({
             brand: "apple music",
             logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/2000px-Apple_Music_logo.svg.png"
         }        
-    ]
+    ],
+    EMAILJS_USERID: "user_5JiSj8EUURp7dGwXrfeoW",
+    PLAYER_NO_CONTENT_MSG: "No featured content available at the moment",
+    FEATURED_VIDEO: "https://www.youtube.com/embed/ELVYcEPIKJg",
+    VIDEO_PREVIEW_TEASER_MSG: "Listen to this sensational hit song which is already doing rounds in Youtube.",
+    VIDEO_PREVIEW_MSG: "Watch all our exclusive videos from Youtube. And do not forget to hit like, subscribe and press the Bell icon.  ",
+    ABOUT_PREVIEW_QUOTE: {
+        quote: "One good thing about music, when it hits you, you feel no pain.",
+        credits: "Bob Marley"
+    },
+    ABOUT_PREVIEW_MSG: "We are an Indian music record label company. ",
+    ABOUT_PREVIEW_LINK_TEXT: "Read more...",
+    VIDEOS_PREVIEW_LINK_TEXT: "Check them out..."
 });
 
 export default filler;
