@@ -37,13 +37,15 @@ const filler = Object.freeze({
     FEATURED_VIDEO: "https://www.youtube.com/embed/ELVYcEPIKJg",
     VIDEO_PREVIEW_TEASER_MSG: "Listen to this sensational hit song which is already doing rounds in Youtube.",
     VIDEO_PREVIEW_MSG: "Watch all our exclusive videos from Youtube. And do not forget to hit like, subscribe and press the Bell icon.  ",
+    CONTACT_PREVIEW_MSG: "Whether you are a musician, a singer, music publishing needs or just looking for best music for your next movie, webseries, ad films, etc. Then reach out to us. We are all ears. ",
     ABOUT_PREVIEW_QUOTE: {
         quote: "One good thing about music, when it hits you, you feel no pain.",
         credits: "Bob Marley"
     },
     ABOUT_PREVIEW_MSG: "We are an Indian music record label company. ",
     ABOUT_PREVIEW_LINK_TEXT: "Read more...",
-    VIDEOS_PREVIEW_LINK_TEXT: "Check them out..."
+    VIDEOS_PREVIEW_LINK_TEXT: "Check them out...",
+    CONTACT_PREVIEW_TEXT: "Contact us..."
 });
 
 export default filler;

@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import { NavLink } from "react-router-dom";
 import YoutubePlayer from "./YoutubePlayer";
 import filler from "../constants/fillers";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../css/HomePageView.css";
 
 class HomePageView extends Component {
@@ -18,6 +19,10 @@ class HomePageView extends Component {
                 <div className="videos-preview">
                     <YoutubePlayer source={filler.FEATURED_VIDEO} />
                     <p><span className="preview-title">Videos</span><br /><br />{filler.VIDEO_PREVIEW_TEASER_MSG}<br /><br />{filler.VIDEO_PREVIEW_MSG}<NavLink to="/videos">{filler.VIDEOS_PREVIEW_LINK_TEXT}</NavLink></p>
+                </div>
+                <div className="contact-preview">
+                    <span className="contact-icon"><FontAwesomeIcon icon="users" /></span>
+                    <p><span className="preview-title">Contact</span><br /><br />{filler.CONTACT_PREVIEW_MSG}<NavLink to="/contact">{filler.CONTACT_PREVIEW_TEXT}</NavLink></p>
                 </div>
             </div>
         );

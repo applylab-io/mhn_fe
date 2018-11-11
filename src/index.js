@@ -6,9 +6,9 @@ import App from "./js/components/App";
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faPlayCircle, faMusic, faExclamationTriangle, faShareAlt, faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faPlayCircle, faMusic, faExclamationTriangle, faShareAlt, faEnvelope, faBars, faUsers } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faPlayCircle, faMusic, faExclamationTriangle, faShareAlt, faEnvelope, faBars);
+library.add(fab, faPlayCircle, faMusic, faExclamationTriangle, faShareAlt, faEnvelope, faBars, faUsers);
 
 render(
     <Provider store={store}>
