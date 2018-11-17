@@ -32,9 +32,7 @@ class Menu extends Component {
                 <div className="menu" style={{ display: this.state.isToggleOn ? "none" : "flex" }} onClick={this.handleToggle}>
                     <NavLink exact to="/">HOME</NavLink>
                     <NavLink to="/partners">PARTNERS</NavLink>
-                    <NavLink to="/music">MUSIC</NavLink>
                     <NavLink to="/videos">VIDEOS</NavLink>
-                    <NavLink to="/news">NEWS</NavLink>
                     <NavLink to="/about">ABOUT</NavLink>
                     <NavLink to="/contact">CONTACT</NavLink>
                 </div>

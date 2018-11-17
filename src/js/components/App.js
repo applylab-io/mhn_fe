@@ -6,9 +6,7 @@ import Footer from "./Footer";
 import * as emailjs from "emailjs-com";
 import HomePageView from "./HomePageView";
 import PartnersPageView from "./PartnersPageView";
-import MusicPageView from "./MusicPageView";
 import AboutPageView from "./AboutPageView";
-import NewsPageView from "./NewsPageView";
 import VideosPageView from "./VideoPageView";
 import ContactPageView from "./ContactPageView";
 import NoMatch from "./NoMatch";
@@ -28,9 +26,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={HomePageView} />
                         <Route path="/partners" component={PartnersPageView} />
-                        <Route path="/music" component={MusicPageView} />
                         <Route path="/videos" component={VideosPageView} />
-                        <Route path="/news" component={NewsPageView} />
                         <Route path="/about" component={AboutPageView} />
                         <Route path="/contact" component={ContactPageView} />
                         {/* when none of the above match, <NoMatch> will be rendered */}

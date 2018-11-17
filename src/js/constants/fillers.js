@@ -37,7 +37,7 @@ const filler = Object.freeze({
     FEATURED_VIDEO: "https://www.youtube.com/embed/ELVYcEPIKJg",
     VIDEO_PREVIEW_TEASER_MSG: "Listen to this sensational hit song which is already doing rounds in Youtube.",
     VIDEO_PREVIEW_MSG: "Watch all our exclusive videos from Youtube. And do not forget to hit like, subscribe and press the Bell icon.  ",
-    CONTACT_PREVIEW_MSG: "Whether you are a musician, a singer, music publishing needs or just looking for best music for your next movie, webseries, ad films, etc. Then reach out to us. We are all ears. ",
+    CONTACT_PREVIEW_MSG: "Whether you are a musician, a singer, have music publishing needs or just looking for best music for your next movie, webseries, ad films, etc. Reach out to us. We are all ears. ",
     ABOUT_PREVIEW_QUOTE: {
         quote: "One good thing about music, when it hits you, you feel no pain.",
         credits: "Bob Marley"
@@ -45,7 +45,10 @@ const filler = Object.freeze({
     ABOUT_PREVIEW_MSG: "We are an Indian music record label company. ",
     ABOUT_PREVIEW_LINK_TEXT: "Read more...",
     VIDEOS_PREVIEW_LINK_TEXT: "Check them out...",
-    CONTACT_PREVIEW_TEXT: "Contact us..."
+    CONTACT_PREVIEW_TEXT: "Contact us...",
+    ABOUT_TEXT: "Music Hub has been synonymous with the publication of quality music for over five years. To take this tradition forward, Music Hub envisages a wider creative horizon where it work and collaborate with other musicians, singers and creative artists across the globe. It would share its mantra of ‘Music for everyone’. However, to connote collaborative creative effort with emphasis on fresh ideas, good lyrics, music across different genres, the company needed a new identity. Today this is more than possible because Indian music industry is bubbling with new ideas, new people and even newer markets. Entertainment industry is one of the fastest growing industries in the Indian subcontinent. Music Hub will present to audiences in India and around the world fascinating and enthralling songs crafted by musicians from India and abroad. Because we believe in quality and honesty. We want to satisfy our clients and audience. And all this with the hallmark of songs produced by Music Hub.",
+    DIRECTOR_NAME: "Anirudh Singh",
+    DIRECTOR_TITLE: "CEO, Music Hub Pvt. Ltd."
 });
 
 export default filler;

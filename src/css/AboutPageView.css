@@ -8,6 +8,38 @@
     color: grey;
 }
 
-.about-page-view > h1 {
+.about-title {
+    font-size: xx-large;
     text-align: center;
+}
+
+.director-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin: auto;
+    }
 }
