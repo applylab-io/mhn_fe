@@ -48,7 +48,83 @@ const filler = Object.freeze({
     CONTACT_PREVIEW_TEXT: "Contact us...",
     ABOUT_TEXT: "Music Hub has been synonymous with the publication of quality music for over five years. To take this tradition forward, Music Hub envisages a wider creative horizon where it work and collaborate with other musicians, singers and creative artists across the globe. It would share its mantra of ‘Music for everyone’. However, to connote collaborative creative effort with emphasis on fresh ideas, good lyrics, music across different genres, the company needed a new identity. Today this is more than possible because Indian music industry is bubbling with new ideas, new people and even newer markets. Entertainment industry is one of the fastest growing industries in the Indian subcontinent. Music Hub will present to audiences in India and around the world fascinating and enthralling songs crafted by musicians from India and abroad. Because we believe in quality and honesty. We want to satisfy our clients and audience. And all this with the hallmark of songs produced by Music Hub.",
     DIRECTOR_NAME: "Anirudh Singh",
-    DIRECTOR_TITLE: "CEO, Music Hub Pvt. Ltd."
+    DIRECTOR_TITLE: "CEO, Music Hub Pvt. Ltd.",
+    VIDEOS: [
+        {
+            title: "BOLO NA",
+            src: "https://www.youtube.com/embed/vhV0idCn2Yw",
+            channel: "MUSIC HUB HINDI"
+        },
+        {
+            title: "Apna Samajh Kar Keh Do",
+            src: "https://www.youtube.com/embed/ELVYcEPIKJg",
+            channel: "MUSIC HUB HINDI"
+        },
+        {
+            title: "DIL BATA DE",
+            src: "https://www.youtube.com/embed/HHyy97YFXNw",
+            channel: "MUSIC HUB HINDI"
+        },
+        {
+            title: "KASHTI BANA LUN IN ANKHO KO",
+            src: "https://www.youtube.com/embed/79TbJ-v2k6A",
+            channel: "MUSIC HUB HINDI"
+        },
+        {
+            title: "GAYATRI MANTRA",
+            src: "https://www.youtube.com/embed/GXlydHg6fGE",
+            channel: "MUSIC HUB BHAKTI"
+        },
+        {
+            title: "MAA KA SATKAAR",
+            src: "https://www.youtube.com/embed/H8th3dPma2U",
+            channel: "MUSIC HUB BHAKTI"
+        },
+        {
+            title: "SHRI HANUMAN JI KI AARTI",
+            src: "https://www.youtube.com/embed/oEDk9JZ9dtY",
+            channel: "MUSIC HUB BHAKTI"
+        },
+        {
+            title: "RAADHE RAADHE",
+            src: "https://www.youtube.com/embed/CcKcYQO4gWk",
+            channel: "MUSIC HUB BHAKTI"
+        },
+        {
+            title: "PURVI BAYAR",
+            src: "https://www.youtube.com/embed/0PpgeQn6xRg",
+            channel: "MUSIC HUB BHOJPURI"
+        },
+        {
+            title: "O PIYA O PIYA",
+            src: "https://www.youtube.com/embed/FYj2w_yWPwY",
+            channel: "MUSIC HUB BHOJPURI"
+        },
+        {
+            title: "SAGRO TO SHOR BAANTE",
+            src: "https://www.youtube.com/embed/YdkDKzNUaPQ",
+            channel: "MUSIC HUB BHOJPURI"
+        },
+        {
+            title: "TOHRA NAAM MAANGE SINDURVA",
+            src: "https://www.youtube.com/embed/3lEKUb1Gmps",
+            channel: "MUSIC HUB BHOJPURI"
+        }
+    ],
+    CHANNELS: [
+        {
+            name: "MUSIC HUB HINDI",
+            src: "https://www.youtube.com/channel/UCcbgNbNj8Zhf4WvWHaGZBpQ"
+        },
+        {
+            name: "MUSIC HUB BHAKTI",
+            src: "https://www.youtube.com/channel/UCF8C_1cuckYpMKlBEJTP9Fw"
+        },
+        {
+            name: "MUSIC HUB BHOJPURI",
+            src: "https://www.youtube.com/channel/UCRU79BG0ebiD2M5oAH7FE7A"
+        }
+    ]
 });
 
 export default filler;

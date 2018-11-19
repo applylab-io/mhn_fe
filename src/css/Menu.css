@@ -12,7 +12,7 @@
     color: grey;
 }
 .menu > a:hover {
-    background-color: darkgray;
+    background-color: #efeeee;
 }
 
 .menu-subcontainer {
